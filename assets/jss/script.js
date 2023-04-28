@@ -1,8 +1,22 @@
 var searchButton = document.querySelector('#search-button');
 
-function handleSearchButtonClick(event){
+function handleSearchButtonSubmit(event){
     event.preventDefault();
+
+    var searchInputVal = document.querySelector('#search-input').value;
+
+    if(!searchInputVal)
+    {
+      console.log("Error,please enter an animal name!");
+      return;
+    }
+
+    var queryString = './search-result.html?q=' + searchInputVal + '';
+
+    location.assign(queryString);
 }
+
+searchButton.addEventListener('click', handleSearchButtonSubmit);
 
 
 
@@ -13,7 +27,7 @@ function handleSearchButtonClick(event){
 //getApi(requestUrl);
 
 
-var name = 'cheetah'
+//var name = 'cheetah'
 // $.ajax({
 //     method: 'GET',
 //     url: 'https://api.api-ninjas.com/v1/animals?name=' + name,
@@ -27,20 +41,20 @@ var name = 'cheetah'
 //     }
 // });
 
-var requestUrl = 'https://api.api-ninjas.com/v1/animals?name=cheetah';
-fetch(requestUrl,{
-    method:'GET',
-    mode: "cors",
-    referrerPolicy:"no-referrer",
-    redirect:"follow",
-    headers: { 'X-API-KEY': '26jN/1pAhjI32R0R/q6wTg==xVHTVUagb2CfoKz0',
-    'Content-Type': 'application/json',}})
+ var requestUrl = 'https://api.api-ninjas.com/v1/animals?name=cheetah';
+ fetch(requestUrl,{
+     method:'GET',
+     mode: "cors",
+     referrerPolicy:"no-referrer",
+     redirect:"follow",
+     headers: { 'X-API-KEY': '26jN/1pAhjI32R0R/q6wTg==xVHTVUagb2CfoKz0',
+     'Content-Type': 'application/json',}})
 
 
 
-    .then(function (response) {
-      return response.json();
-    })
+     .then(function (response) {
+       return response.json();
+     })
     .then(function (data) {
       console.log(data)
       
