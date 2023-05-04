@@ -3073,3 +3073,16 @@ table.hover tr:nth-of-type(even):hover {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.search-button {
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 12px;
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
