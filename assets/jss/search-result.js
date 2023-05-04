@@ -212,28 +212,25 @@ function printResult2(resultOBJ)
 
 }
 
-//Enable the search bar on the search-result html page with the user searched result stored in the local storage.
-function handleSearchFormSubmit(event)
-{
+//When the user click  the search button or use the enter key after typing an animal name, they will be redirect to the search-result html page with the search value.
+function handleSubmitEvent(event){
     event.preventDefault();
-
     var searchInputVal = document.querySelector('#search-input').value;
-
-   
-
-    if(!searchInputVal){
-        console.error("Error, you need to enter an input value for the search");
+    if(!searchInputVal)
+      {
+        console.log("Error,please enter an animal name!");
         return;
+      }
+
+      localStorage.setItem('query',searchInputVal);
+
+      searchApi1(searchInputVal);
+      searchApi2(searchInputVal);
+    
+  
     }
-
-    localStorage.setItem('query',searchInputVal);
-
-    searchApi1(searchInputVal);
-    searchApi2(searchInputVal);
-}
-
-//The button's click event, this enable the user to search any other animal on the search-result html page.
-searchButtonEl.addEventListener('click',handleSearchFormSubmit);
-
+  
+  
+  searchForm.addEventListener("submit",handleSubmitEvent);
 
 getQuery();
