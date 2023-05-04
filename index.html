@@ -1,26 +1,59 @@
-<!DOCTYPE html>
-<html lang = "en"></html>
-
-<head>
-    <meta charset="UTF-8" />
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animal lover!</title>
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style.css" />
-</head>
+    <title>Animal Lover | Welcome</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
 
+    <!-- Start Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="menu">
+          <li class="menu-text button"><a href="#home">Home</a></li>
+          <li class="menu-text button"><a href="#about">About</a></li>
+        </ul>
+      </div>
+   </div>
 
-<body>
-    <div class="">
-      <h1 class="titles">Search engine for pets lover!</h1>
-      <form id="search-form">
-        <input id="search-input" class="form-input" type="text" placeholder="Search!">  
-      </form>
-      <button id="search-button">Search</button>
+    <!-- End Top Bar -->
 
-     
+    <div class="callout large primary">
+      <div class="row column text-center">
+        <h1>Animal Lover!</h1>
+        <form id="search-form">
+          <input id="search-input" class="form-input" type="text" placeholder="Search engine for Animals(singular term)!"> 
+        </form>
+        <button id="search-button" class="search-button">Search</button>
+        <p>The last search was about  <span id="last-result"></span></p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/jss/script.js"></script>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     
-</body>
+
+    <!-- We can now combine rows and columns when there's only one column in that row -->
+    <div class="row medium-8 large-7 columns">
+      <div class="blog-post">
+        <h2 >Knowledge is powerful!! </h2>
+        <img class="  centerimage" src="assets/s513846095417635483_p5_i1_w500.jpeg">
+        <p id="about" class="b">
+          Animals are a diverse group of living beings that inhabit the Earth. From the tiniest insect to the largest mammal, animals come in all shapes and sizes. They play important roles in the ecosystem, serving as pollinators, predators, prey, and decomposers. Many animals have unique adaptations that allow them to survive in their environments, such as camouflage, flight, and burrowing. Humans have domesticated many animals for companionship, food, and labor, but unfortunately, many animal species are threatened or endangered due to habitat loss, pollution, and overexploitation. It's important for us to respect and protect animals and their habitats to maintain a healthy and balanced ecosystem. 😺🐶🐥🐸
+        </p>
+        <div id="contact" class="callout">
+          <ul class="menu simple b">
+            <li><a href="#">Developers: Diego Ramos, Qingyuan Meng, Jzero Makiling and Vigor Gee.</a></li>
+            <li><a href="#">Project: 1</a></li>
+          </ul>
+        </div>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

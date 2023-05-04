@@ -1,10 +1,11 @@
 # Animal-Lovers
 
-For this project we were required to work in a group of four to use two public API's and incorperate them into a working site of our own.
 
-We decided to use the Library of congress API, and Ninjas animal API to be able to incroperate a animal website. This allows users to be able to search any animal to their liking and many facts/ attributes will come up about said animal.
+* For this project we were required to work in a group of four to use two public API's and incorperate them into a working site of our own.
 
-The project was broken down between the four members where each was assigned a task depending on what one was most comfortbale with. Two worked on CSS/foundation CSS and index.html, while the other two worked on javascript and incorperation of API's
+* We decided to use the Library of congress API, and Ninjas animal API to be able to incroperate a animal website. This allows users to be able to search any animal to their liking and many facts/ attributes will come up about said animal.
+
+* The project was broken down between the four members where each was assigned a task depending on what one was most comfortbale with. Two worked on CSS/foundation CSS and index.html, while the other two worked on javascript and incorperation of API's
 
 * When the user clicks on the link they are introduced with the main page.
 

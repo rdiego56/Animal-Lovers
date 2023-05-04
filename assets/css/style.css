@@ -1,3 +1,37 @@
+
+.button-center{
+    text-align: center;
+    margin: auto ;
+    display: flex;
+
+}
+.color{
+  background-color: white;
+}
+.large{
+  font-size: larger;
+}
+.width{
+    width:100px;
+}
+.centerimage{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.smallerwidth{
+  width:70%;
+}
+.none{
+  list-style: none;
+}
+
+
+
+
+
 @charset "UTF-8";
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -98,14 +132,18 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-b,
-strong {
+
+.b{
+
+
   font-weight: bold; }
 
 /**
  * Address styling not present in Safari and Chrome.
  */
-dfn {
+
+.dfn {
+
   font-style: italic; }
 
 /**
@@ -3085,4 +3123,21 @@ table.hover tr:nth-of-type(even):hover {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+
 }
+
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+

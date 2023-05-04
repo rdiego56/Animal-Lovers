@@ -17,7 +17,8 @@ function getQuery()
     searchApi2(query);
 }
 
-//Fetch the datas from the Api
+
+//Fetch the datas from the ninjas.com animal Api
 function searchApi1(query)
 {
     var ninjasApi = 'https://api.api-ninjas.com/v1/animals?name='+query;
@@ -46,19 +47,32 @@ function searchApi1(query)
        });
 }
 
+
+//Print the datas from the ninjas.com animal api to the actual search-result html page so that the user can see it.
 function printResult1(resultObject)
 {
-    var resultCard = document.createElement('div');
+    var resultCard = document.createElement('div')
+    resultCard.classList.add('card','bg-light', 'text-dark', 'mb-3', 'p-3')
+    
 
-    var resultBody = document.createElement('div');
-
+   var resultBody = document.createElement('div');
+    resultBody.classList.add("card-section","color")
+   
     
 
     var nameEl = document.createElement('h3');
-    var characteristicEl = document.createElement('p');
-    var locationEl = document.createElement('p');
+    nameEl.classList.add("text-center","large","b")
 
-    //console.log(resultObject.characteristics);
+    
+
+    var characteristicEl = document.createElement('ul');
+    characteristicEl.classList.add("text-center","dfn","b","none")
+   
+
+    var locationEl = document.createElement('p');
+    locationEl.classList.add("text-center","dfn","b")
+  
+
     if(resultObject.name){
         nameEl.innerHTML = "Name:"+ resultObject.name;
     }
@@ -67,15 +81,14 @@ function printResult1(resultObject)
     }
     var peculiarity='';
     if(resultObject.characteristics){
-        //for(var i = 0; i< resultObject.characteristics.length;i++){
-        //var peculiarity = peculiarity + ',' + resultObject.characteristics[i];}
+
+       
         
         for(const key in resultObject.characteristics){
-       // characteristicEl.innerHTML = resultObject.characteristics;
-            //console.log(key);
-            //console.log(resultObject.characteristics[key]);
+       
             
-             peculiarity = peculiarity + key +': '+ resultObject.characteristics[key] + ', ';
+             peculiarity = peculiarity +"<li>"+ key +': '+ resultObject.characteristics[key] + '</li>';
+
              
         }
         characteristicEl.innerHTML = peculiarity;
@@ -95,6 +108,7 @@ function printResult1(resultObject)
     resultCard.append(resultBody);
 
     resultContentEl1.append(resultCard);
+
  }
 
 
@@ -130,22 +144,30 @@ function searchApi2(query)
 
 
 
+//Print the datas from library of congress Api to the actual search-result html page so that the user can see it on the page.
 function printResult2(resultOBJ)
 {
     var resultCard = document.createElement('div');
+    resultCard.classList.add('card', 'bg-light', 'text-dark', 'mb-3', 'p-3');
 
     var resultBody = document.createElement('div');
+    resultBody.classList.add("card-section","color");
 
     var titleEl = document.createElement('h3');
+    titleEl.classList.add('text-center');
+
 
     var bodyContent1 = document.createElement('p');
-
+    bodyContent1.classList.add('text-center',"dfn","b");
     var bodyContent2 = document.createElement('p');
-
+    bodyContent2.classList.add('text-center',"dfn","b");
     var bodyContent3 = document.createElement('p');
-
+    bodyContent3.classList.add('text-center',"dfn","b");
 
     var linkEl = document.createElement('a')
+    linkEl.removeAttribute('card-body');
+    linkEl.classList.add('button-center','btn', 'btn-red','width');
+
 
     if(resultOBJ.title)
     {
@@ -190,6 +212,7 @@ function printResult2(resultOBJ)
 
 }
 
+//Enable the search bar on the search-result html page with the user searched result stored in the local storage.
 function handleSearchFormSubmit(event)
 {
     event.preventDefault();
@@ -209,8 +232,8 @@ function handleSearchFormSubmit(event)
     searchApi2(searchInputVal);
 }
 
+//The button's click event, this enable the user to search any other animal on the search-result html page.
 searchButtonEl.addEventListener('click',handleSearchFormSubmit);
-
 
 
 getQuery();
