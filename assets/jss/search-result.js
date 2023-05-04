@@ -3,7 +3,7 @@ var resultContentEl1 = document.querySelector('#result-content1');
 var resultTextEl2 = document.querySelector('#result-text2');
 var resultContentEl2 = document.querySelector('#result-content2');
 var searchButtonEl = document.querySelector('#search-button');
-
+var searchForm = document.querySelector('#search-form');
 
 
 //Get the query value, which is whatever animal the user searched for
