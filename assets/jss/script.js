@@ -6,27 +6,25 @@ var searchButton = document.querySelector('#search-button');
 var lastResult= localStorage.getItem("query");
 document.querySelector("#last-result").innerHTML = lastResult;
 
-//A function that will be incorporated into the click event function below
-function handleSearchButtonSubmit(event){
-    event.preventDefault();
-
-    var searchInputVal = document.querySelector('#search-input').value;
-
-    if(!searchInputVal)
+//When the user click  the search button or use the enter key after typing an animal name, they will be redirect to the search-result html page with the search value.
+function handleSubmitEvent(event){
+  event.preventDefault();
+  var searchInputVal1 = document.querySelector('#search-input').value;
+  if(!searchInputVal1)
     {
       console.log("Error,please enter an animal name!");
       return;
     }
+  
+    var queryString1 = './search-result.html?q=' + searchInputVal1 + '';
 
-    var queryString = './search-result.html?q=' + searchInputVal + '';
+    localStorage.setItem("query",searchInputVal1);
+    location.assign(queryString1);
 
-    localStorage.setItem("query",searchInputVal);
-    location.assign(queryString);
+  }
 
-}
-//When the user click the search button after typing an animal name, they will be redirect to the search-result html page with the search value.
-searchButton.addEventListener('click', handleSearchButtonSubmit);
 
+searchForm.addEventListener("submit",handleSubmitEvent);
 
 
 
