@@ -1,5 +1,5 @@
 //The search button
-var searchButton = document.querySelector('#search-button');
+var searchForm = document.querySelector('#search-form');
 
 
 //Get the last searched-result stored in the local storage
