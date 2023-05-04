@@ -1,8 +1,8 @@
 # Animal-Lovers
 
-![Project-1-homepage]![Project-1-homepage](https://user-images.githubusercontent.com/128023854/236110792-3b8935bd-1c30-4b49-bc82-da9d386a4fa8.png)
+![Project-1-homepage](https://user-images.githubusercontent.com/128023854/236110792-3b8935bd-1c30-4b49-bc82-da9d386a4fa8.png)
 
-![Project-1-searchpage]![Project-1-searchpage](https://user-images.githubusercontent.com/128023854/236110829-c66e1ec7-e883-46c0-b188-b0dccc315dff.png)
+![Project-1-searchpage](https://user-images.githubusercontent.com/128023854/236110829-c66e1ec7-e883-46c0-b188-b0dccc315dff.png)
 
 * For this project we were required to work in a group of four to use two public API's and incorperate them into a working site of our own.
 
