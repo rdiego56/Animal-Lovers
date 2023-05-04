@@ -18,7 +18,7 @@
 * When finished they can click on the home tab at the top left and they will be redirected back to the homepage where they can look up antother animal.
 
 # Live Website
-[LiveWebPage]
+[LiveWebPage](https://rdiego56.github.io/Animal-Lovers/)
 
 # GitHub repository for Project 1
 [GitHubRepo](https://github.com/rdiego56/Pet-Lovers)
