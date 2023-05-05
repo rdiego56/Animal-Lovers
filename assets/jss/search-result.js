@@ -155,6 +155,9 @@ function printResult2(resultOBJ)
 
     var titleEl = document.createElement('h3');
     titleEl.classList.add('text-center');
+    
+    var imageEl = document.createElement('img');
+    imageEl.classList.add('centerimage1');
 
 
     var bodyContent1 = document.createElement('p');
@@ -204,6 +207,8 @@ function printResult2(resultOBJ)
 
     linkEl.textContent = "Read More";
     linkEl.href = resultOBJ.url;
+    
+    imageEl.src = resultOBJ.image_url[0];
 
     resultBody.append(titleEl,bodyContent1,bodyContent2,bodyContent3,linkEl);
     resultCard.append(resultBody);
