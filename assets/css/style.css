@@ -21,6 +21,16 @@
     margin-right: auto;
   
 }
+
+.centerimage1{
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+
 .smallerwidth{
   width:70%;
 }
