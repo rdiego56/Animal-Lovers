@@ -16,7 +16,7 @@
 
 * When user input a animal into the search bar and click on search they are brought to another page.
 
-* When redirected to the next page they are introduced with a variety of facts about the animals, in whihc the user is able to look through and learn. 
+* When redirected to the next page they are introduced with a variety of facts about the animals, in whihc the user is able to look through and learn, along with them there are also pictures provided. 
 
 * When finished they can click on the home tab at the top left and they will be redirected back to the homepage where they can look up antother animal.
 
